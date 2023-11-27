@@ -1,0 +1,44 @@
+.bankName {
+  font-size: 25px;
+}
+
+.monthReview {
+  font-size: 20px;
+}
+
+.centerText {
+  text-align: center;
+}
+
+.informAcc {
+  max-width: 500px;
+  display:flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reviewAccBttn {
+  white-space: nowrap;
+  background: rgb(0, 166, 255);
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 35px;
+  padding: 5px;
+}
+
+.headerLineBreak {
+  border: 2px solid rgb(134,134,126);
+}
+
+.lineBreak {
+  border: 2.5px solid rgb(164, 172, 7);
+}
+
+.leftIndent {
+  margin-left: 5px;
+}
+
+.txtResize {
+  font-size: 1.5vw;
+}
