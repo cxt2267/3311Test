@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <title>Phish Detective</title>
+    <link rel="stylesheet" href="template1.css">
+
+    <!-- This code is responsible for linking to Google API to create the paperclip icon in the attachment details -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="module" src="template1.js"></script>
+
+</head>
+
+<style>
+/* Reset default styles */
+body, p {
+    margin: 0;
+    padding: 0;
+}
+</style>
+
+<body>
+    <!-- Create the email container -->
+    <div class="email-container">
+        <div class="header">
+            <p>Password Reset</p>
+        </div>
+        <!-- Includes the from, subject, and attachment details -->
+        <div class = "email-details">
+            <!-- Code to generate the from line with appropriate spacing -->
+            <div><b>From:&ensp;&emsp;</b>
+                <div id="clue1" style="display: inline;" title="">
+                </div>
+            </div>
+             <!-- Code to generate the subject line with appropriate spacing -->
+            <div><b>Subject:&ensp;</b>Password Reset</div>
+            <br>
+        </div>
+        <!-- Actual content of the email -->
+        <div class="content">
+            <span class="leftIndent">We got a request to reset your<spanid="clue4"></span> password.</span>
+            <div class="resetPasswordBtn" id="clue2">Reset password</div>
+            <div class="leftIndent">If you ignore this message, your password won't be changed.</div>
+            <div class="viewAccSpanLine leftIndent">
+                <span >If you didn't request a password reset, let us know. Or you can also also view 
+                    <span class="hyperlink" id="clue4"> your account settings</span>.
+                </span>
+            </div>
+            
+            <br>
+            <span class="ifBtnSpanLine leftIndent">If the button above does not appear, please copy and paste this link into your browser's address bar:</span>
+            <br>
+            <span class="leftIndent" id="clue3"></span> 
+        </div>
+    </div>
+</body>
+
+</html>
